@@ -1,0 +1,21 @@
+[project]
+name = "pass-lock"
+version = "0.1.0"
+description = "A secure password manager with master password and TOTP (Two-Factor Authentication)."
+authors = [
+    {name = "Gatjang Deng", email = "deng.gatjang@outlook.com"},
+]
+dependencies = [
+    "cryptography",
+    "pyperclip",
+    "pyotp",
+    "qrcode"
+]
+
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+[tool.pdm]
+distribution = false
+
