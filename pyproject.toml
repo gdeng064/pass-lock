@@ -7,9 +7,10 @@ authors = [
 ]
 dependencies = [
     "cryptography",
-    "pyperclip",
+    "pyperclip>=1.9.0",
     "pyotp",
-    "qrcode"
+    "qrcode",
+    "pillow>=11.1.0"
 ]
 
 requires-python = "==3.12.*"

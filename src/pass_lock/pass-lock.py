@@ -72,7 +72,7 @@ def initialize_totp():
         secret_key = pyotp.random_base32()
         
         # Generate a QR code for the secret key
-        totp_uri = pyotp.totp.TOTP(secret_key).provisioning_uri(name="pass-lock", issuer_name="pass-lock")
+        totp_uri = pyotp.totp.TOTP(secret_key).provisioning_uri(name="PassLock", issuer_name="PassLock")
         qr = qrcode.make(totp_uri)
         qr.show()  # Display the QR code for scanning with Google Authenticator
 
@@ -233,7 +233,7 @@ def main():
 
     # GUI setup
     root = tk.Tk()
-    root.title("pass-lock")
+    root.title("PassLock")
 
     # Create Treeview for displaying passwords
     tree = ttk.Treeview(root, columns=("Website", "Username", "Password", "URL"), show="headings")

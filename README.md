@@ -5,6 +5,8 @@
 
 **PassLock** is a secure, easy-to-use password manager that helps you store and manage your passwords. It uses **AES encryption** for storing passwords securely and **TOTP (Two-Factor Authentication)** for enhanced security. This application features an intuitive graphical interface built with **Tkinter**.
 
+![PassLock Screenshot](images/passlock-screenshot.png)
+
 ## Features
 
 - **Master Password Protection**: Encrypts your passwords with a secure master password.
@@ -31,7 +33,7 @@ pip install tkinter cryptography pyperclip pyotp qrcode sqlite3
 
 ### Create a Virtual Environment (venv)
 
-To isolate the project's dependencies, create a virtual environment by running the following command:
+To isolate the project\'s dependencies, create a virtual environment by running the following command:
 
 python3 -m venv venv
 Activate the virtual environment:
